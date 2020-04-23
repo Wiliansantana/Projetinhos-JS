@@ -46,6 +46,26 @@
  
  <div id="res"></div>
  </div></center>
+
+ <script>  // Circulo em Área
+    function verificar(){
+        var n11 = window.document.getElementById('n1')
+        var res = window.document.getElementById('res')
+        var r1 = Number(n11.value)
+        var res = document.getElementById('res')
+        var resp =  9*r1/5 + 32
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        document.write = (resp)
+        res.innerHTML =   ' Farenheit = '  +resp+ '°<br> <br>'
+        img.setAttribute('src', 'fahrenheit.png')
+        res.appendChild(img)
+
+           
+
+        
+    }
+</script>
  
  
  
