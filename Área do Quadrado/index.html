@@ -49,8 +49,26 @@
 
 
 <script>
+    // Circulo em Área
+    function verificar(){
+        var n11 = window.document.getElementById('n1')
+        var res = window.document.getElementById('res')
+        var r1 = Number(n11.value)
+        var res = document.getElementById('res')
+        var resp =  r1*r1
+        var dobro = resp*2
+        var img = document.createElement('img')
+        img.setAttribute('id', 'foto')
+        document.write = (resp)
+        res.innerHTML =  ' Área = ' +r1+ ' tem = '  +resp+ ' cm², e o Dobro é ' +dobro+ 'cm² <br><br>'
+        img.setAttribute('src', 'area.png')
+        res.appendChild(img)
 
-    
+
+
+        
+    }
+
 </script>
 
 
