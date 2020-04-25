@@ -49,7 +49,16 @@
 
     <script>
         function verificar(){
-           
+            var n11 = window.document.getElementById('n1')
+            var n12 = window.document.getElementById('n2')
+            var res = window.document.getElementById('res')
+            var r1 = Number(n11.value)
+            var r2 = Number(n12.value)
+            var res = document.getElementById('res')
+            var resp = r1*r2
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+
             res.innerHTML = 'Ganhando ' +r1+ ' R$ por Hora e ' +r2+ ' Horas trabalhadas no mês seu salario será ' +resp+ 'R$<br><br>'
             img.setAttribute('src', 'rich.png')
             
