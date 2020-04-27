@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        background-image: url("in.jpg");
+        }
+
+    h1{
+        color: white;
+        text-align: center;
+        }
+
+    
+</style>
+<body>
+    <br>
+     <p>Programas feitos com base nos exercicio em Python do site: <a href="https://wiki.python.org.br/ListaDeExercicios">wiki.python.org.br</a></p>
+     <p>9- Faça um Programa que peça a temperatura em graus Celsius, transforme e mostre a temperatura em graus Farenheit </p> 
+ 
+ <h1>9- Insira Temperatura em Celsius para Conversão !</h1>
+    <br>
+    <h1>INVESTIGAÇÃO CRIMINAL</h1>
+    <br>
+
+    <center><div class="card w-50 ">
+        <div class="card-body">
+          
+    <p>Responda 0 Para "NÃO" e 1 Para "SIM"</p>
+
+    <p>Telefonou para a vítima?  </p>
+    <div class="form-group col-md-4 ">
+            <input type="number" class="form-control text-center shadow-sm" name="txt" id="txt">
+    </div>
+    <p>Esteve no local do crime? </p>
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt1" id="txt1">
+    </div>
+    <p>Mora perto da vítima?     </p>
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt2" id="txt2">
+    </div>
+    <p>Devia para a vítima?      </p>
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt3" id="txt3">
+    </div>
+    <p>Já trabalhou com a vítima?</p>
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt4" id="txt4">
+    </div>
+    
+    <br>
+    <input type="button" value="Verificar" class="btn btn-outline-success" onclick="verificar()">
+    <br><br>
+    <div id="res"></div>
+        </div>
+      </div></center>
+    
+    
+
+    <script>
+        function verificar(){
+            var txtv = window.document.querySelector('input#txt')
+            var txtw = window.document.querySelector('input#txt1')
+            var txtx = window.document.querySelector('input#txt2')
+            var txty = window.document.querySelector('input#txt3')
+            var txtz = window.document.querySelector('input#txt4')
+            var res = window.document.querySelector('div#res')
+            var resultado = Number(txtv.value)
+            var resultado1 = Number(txtw.value)
+            var resultado2 = Number(txtx.value)
+            var resultado3 = Number(txty.value)
+            var resultado4 = Number(txtz.value)
+            var s = resultado + resultado1 + resultado2 + resultado3 + resultado4
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+
+            if (s <= 1){
+                res.innerHTML = 'INOCENTE! <br>'
+                img.setAttribute('src', 'inocente.png')
+
+            }else if (s == 2){
+                res.innerHTML = 'Suspeita! <br>'
+                img.setAttribute('src', 'suspeito.png')
+            }
+            else if (s <= 4){
+                res.innerHTML = 'Cumplisse! <br>'
+                img.setAttribute('src', 'cumplisse.png')
+            }
+            else if (s == 5){
+                res.innerHTML = 'Culpado! <br>'
+                img.setAttribute('src', 'culpado.png')
+            }
+            else{
+                res.innerHTML = 'ERRO Responda Apenas com 0 para Não e 1 para Sim !!'
+            }
+            res.appendChild(img)
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>
