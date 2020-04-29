@@ -1,5 +1,5 @@
 # Projetinhos JS
- Pequenos projetos usando Html, Css, Bootstrap, (DOM e Manipulação de imagens com JavaScript)..<br>
+ <h3> Projetinhos utilizando Html, Css, Bootstrap, (DOM e Manipulação de imagens com JavaScript)..</h3><br>
  
  ![Apro](https://user-images.githubusercontent.com/48594322/80485213-5de55400-892f-11ea-82c7-d5f8db96b089.png)
  ![Rep](https://user-images.githubusercontent.com/48594322/80485228-62117180-892f-11ea-8f46-aedd3b0eec91.png)
