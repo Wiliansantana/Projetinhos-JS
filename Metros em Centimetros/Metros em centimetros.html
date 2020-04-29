@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Metros em Centimetros :)</title>
+</head>
+<style>
+    h1{
+        color: white;
+        text-align: center;
+        }
+    p{
+        color: white;
+        text-align: center;
+    }
+    body{
+        background-color: black;
+    }
+    
+
+</style>
+<body>
+
+    <br>
+    <p>Programas feitos com base nos exercicio em Python do site: <a href="https://wiki.python.org.br/ListaDeExercicios">wiki.python.org.br</a></p>
+    <p>5- Faça um Programa que converta Metros para Centímetros.</p> 
+    <p>6- Faça um Programa que peça o raio de um círculo, calcule e mostre sua área..</p> 
+    <h1>5- Insira quantos Metros quer converter em Centimetros!</h1>
+    <br> 
+    <!-- Metros em Centimetros -->
+    <center>
+    <div class="card w-50 ">
+        <div class="card-body">
+             <div class="form-group col-md-4 ">
+                <img src="icons8-fita-métrica-50.png" class="rounded mx-auto d-block" alt="...">M
+                <br>
+                <input type="number" class="form-control text-center shadow-sm" name="n1" id="n1">
+             </div>
+             
+             
+    <input type="button" class="btn btn-primary" value="Verificar" onclick='verificar()'><br><br>
+
+<div id="res"></div>
+</div></center>
+
+<br><br><br><br>
+
+
+    
+
+
+
+    <script>  // Metros em Centimetros
+        function verificar(){
+            var n11 = window.document.getElementById('n1')
+            var res = window.document.getElementById('res')
+            var r1 = Number(n11.value)
+            var res = document.getElementById('res')
+            var resp = r1 * 100
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+            document.write = (resp)
+            res.innerHTML =  r1 +' Metros tem = ' +resp+ ' Centimetros <br><br>'
+            img.setAttribute('src', 'icons8-cor-48.png')
+            res.appendChild(img)
+
+
+        }
+    </script>
+    
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
