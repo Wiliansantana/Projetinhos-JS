@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    h1, h3, h4{
+        color: white;
+        text-align: center;
+        }
+    p{
+        color: white;
+        text-align: center;
+    }
+    body{
+        background-color: black;
+    }
+    
+
+</style>
+<body>
+    <br>
+    <h3>Programas feitos com base nos exercicio em Python do site: <a href="https://wiki.python.org.br/ListaDeExercicios">wiki.python.org.br</a></h3>
+    <br>
+    <p>2 - (Estrutura De Repeticao) Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, <br>mostrando uma mensagem de erro e voltando a pedir as informações.
+    </p> 
+    <br>
+    <h1>Cadastro</h1>
+    <center><div class="card w-50 ">
+        <div class="card-body">
+          
+    <p>CADASTRO</p>
+
+    Insira seu nome:  
+    <div class="form-group col-md-4 ">
+            <input type="text" class="form-control text-center shadow-sm" name="txt" id="txt">
+    </div>
+    Insira sua Senha:
+    <div class="form-group col-md-4 ">
+        <input type="text" class="form-control text-center shadow-sm" name="txt1" id="txt1">
+    </div>
+    
+    
+    <br>
+    <input type="button" value="Verificar" class="btn btn-outline-success" onclick="verificar()">
+    <br><br>
+    <div id="res"></div>
+        </div>
+      </div></center>
+    
+    
+
+    <script>
+        function verificar(){
+            var txtv = window.document.querySelector('input#txt')
+            var txtw = window.document.querySelector('input#txt1')
+            var res = window.document.querySelector('div#res')
+            var resultado = (txtv.value)
+            var resultado1 = (txtw.value)
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+
+            if (resultado == resultado1 ){
+                res.innerHTML = 'ERRO Usuario e Senha Iguais!<br><br> '
+                img.setAttribute('src', 'close.png')
+                
+            }
+            else{
+                res.innerHTML = 'Cadastrado com Sucesso !! <br><br>'
+                img.setAttribute('src', 'tick.png')
+            }
+            res.appendChild(img)
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>
