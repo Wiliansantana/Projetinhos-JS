@@ -13,6 +13,8 @@
  ![peso](https://user-images.githubusercontent.com/48594322/80710218-e2b5a680-8ac4-11ea-9a0e-d4889de53b51.png)
  ![CadastroS](https://user-images.githubusercontent.com/48594322/80808336-b584f900-8b95-11ea-8ba1-f349b9e9e3e4.png)
 ![CadX](https://user-images.githubusercontent.com/48594322/80808342-b87fe980-8b95-11ea-9ad7-695a527ff88c.png)
+![Combustivel](https://user-images.githubusercontent.com/48594322/80964290-fa539e80-8de6-11ea-8142-83fc7e2ba6d0.png)
+
 
 
 
