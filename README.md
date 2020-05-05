@@ -14,6 +14,9 @@
  ![CadastroS](https://user-images.githubusercontent.com/48594322/80808336-b584f900-8b95-11ea-8ba1-f349b9e9e3e4.png)
 ![CadX](https://user-images.githubusercontent.com/48594322/80808342-b87fe980-8b95-11ea-9ad7-695a527ff88c.png)
 ![Combustivel](https://user-images.githubusercontent.com/48594322/80964290-fa539e80-8de6-11ea-8142-83fc7e2ba6d0.png)
+![Validação](https://user-images.githubusercontent.com/48594322/81086195-8e4c6580-8ece-11ea-9daf-41204765df85.png)
+![er](https://user-images.githubusercontent.com/48594322/81086206-90162900-8ece-11ea-84b6-43deab3d1fe1.png)
+
 
 
 
