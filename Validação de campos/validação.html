@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        background-color: black;
+        }
+
+    h1, p{
+        color: white;
+        text-align: center;
+        }
+
+    
+</style>
+<body>
+    <br>
+    <h1>Validação!</h1>
+    <br>
+    <p>Programas feitos com base nos exercicio em Python do site: <a href="https://wiki.python.org.br/ListaDeExercicios">wiki.python.org.br</a></p>
+    <p>2- (ESTRUTURA DE REPETIÇÃO) Faça um programa que leia e valide as seguintes informações: <br>
+        Nome: maior que 3 caracteres;<br>
+        Idade: entre 0 e 150;<br>
+        Salário: maior que zero;<br>
+        Sexo: 'f' ou 'm';<br>
+        Estado Civil: 's', 'c', 'v', 'd';</p> 
+
+    <center><div class="card w-50 ">
+        <div class="card-body">
+          
+    
+
+    Nome:
+    <div class="form-group col-md-4 ">
+        <input type="text" class="form-control text-center shadow-sm" name="txt" id="txt">
+    </div>
+    Idade:
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt1" id="txt1">
+    </div>
+    Salario:
+    <div class="form-group col-md-4 ">
+        <input type="number" class="form-control text-center shadow-sm" name="txt2" id="txt2">
+    </div>
+    Sexo:
+    <div class="form-group col-md-4 ">
+        <input type="text" class="form-control text-center shadow-sm" name="txt3" id="txt3">
+    </div>
+    Estado Civil:
+    <div class="form-group col-md-4 ">
+        <input type="text" class="form-control text-center shadow-sm" name="txt4" id="txt4">
+    </div>
+    
+    <br>
+    <input type="button" value="Verificar" class="btn btn-outline-success" onclick="verificar()">
+    <br><br>
+    <div id="res"></div>
+        </div>
+      </div></center>
+    
+    
+
+    <script>
+        function verificar(){
+            var txtv = window.document.querySelector('input#txt')
+            var txtw = window.document.querySelector('input#txt1')
+            var txtx = window.document.querySelector('input#txt2')
+            var txty = window.document.querySelector('input#txt3')
+            var txtz = window.document.querySelector('input#txt4')
+            var res = window.document.querySelector('div#res')
+            var resultado = (txtv.value)
+            var resultado1 = Number(txtw.value)
+            var resultado2 = Number(txtx.value)
+            var resultado3 = (txty.value)
+            var resultado4 = (txtz.value)
+            var img = document.createElement('img')
+            img.setAttribute('id', 'foto')
+
+            if (resultado.length <= 3){
+                window.alert ("Erro!!  campo (Nome)." )
+               
+                
+            }if (resultado1 <= 0 || resultado1 >= 150){
+                window.alert ("Erro!!  campo (Idade)." )
+            }
+             if (resultado2 <= 0){
+                window.alert ("Erro!!  campo (Salario)." )
+            }
+             if (resultado3 != 'm' && resultado3 != 'f'){
+                window.alert ("Erro!!  campo (Sexo)." )
+            }
+            if(resultado4 != 's' && resultado4 != 'c' && resultado4 != 'v' &&resultado4 != 'd'){
+                window.alert ("Erro!! campo(Estado Civil)")
+            }
+            else{
+                res.innerHTML = 'Cadastrado com Sucesso !! <br><br>'
+                img.setAttribute('src', 'tick.png')
+            }
+
+        
+            res.appendChild(img)
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+    
+
+    
+</body>
+</html>
