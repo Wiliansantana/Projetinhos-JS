@@ -7,7 +7,7 @@
     <title>Metros em Centimetros :)</title>
 </head>
 <style>
-    h1{
+    h1, h4, h5{
         color: white;
         text-align: center;
         }
@@ -19,7 +19,8 @@
         background-color: black;
     }
     ul{
-        color: white;}
+        color: white;
+        text-align: center;}
     
 
 </style>
@@ -27,8 +28,8 @@
 
     <br>
     <p>Programas feitos com base nos exercicio em Python do site: <a href="https://wiki.python.org.br/ListaDeExercicios">wiki.python.org.br</a></p>
-    <p>11- As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.</p> 
-    <p>Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:</p> 
+    <h4>11- As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores e lhe contraram para desenvolver o programa que calculará os reajustes.</h4> 
+    <h5>Faça um programa que recebe o salário de um colaborador e o reajuste segundo o seguinte critério, baseado no salário atual:</h5> 
     <ul>
         <li>salários até R$ 280,00 (incluindo) : aumento de 20%</li>
         <li>salários entre R$ 280,00 e R$ 700,00 : aumento de 15%</li>
@@ -39,45 +40,57 @@
         <li>o valor do aumento;</li>
         <li>o novo salário, após o aumento.</li>
     </ul>
-    <h1>5- Insira quantos Metros quer converter em Centimetros!</h1>
+    <h1></h1>
     <br> 
     <!-- Metros em Centimetros -->
     <center>
     <div class="card w-50 ">
         <div class="card-body">
-             <div class="form-group col-md-4 ">
-                <img src="icons8-fita-métrica-50.png" class="rounded mx-auto d-block" alt="...">M
-                <br>
-                <input type="number" class="form-control text-center shadow-sm" name="n1" id="n1">
-             </div>
+             <div class="form-group col-md-4 "><br>
+                Salario:
+                <input type="number" class="form-control text-center shadow-sm" name="salario" id="salario">
+             </div><br>
              
-             
-    <input type="button" class="btn btn-primary" value="Verificar" onclick='verificar()'><br><br>
-
-<div id="res"></div>
-</div></center>
-
-<br><br><br><br>
-
-
-    
-
-
+             <input type="button" class="btn btn-primary" value="Verificar" onclick='verificar()'><br><br>
+        <div id="res"></div>
+    </div></center>
 
     <script>  // Metros em Centimetros
         function verificar(){
-            var n11 = window.document.getElementById('n1')
+            var Sal = window.document.getElementById('salario')
             var res = window.document.getElementById('res')
-            var r1 = Number(n11.value)
+            var s = Number(Sal.value)
             var res = document.getElementById('res')
-            var resp = r1 * 100
+            var resp = s 
             var img = document.createElement('img')
             img.setAttribute('id', 'foto')
             document.write = (resp)
-            res.innerHTML =  r1 +' Metros tem = ' +resp+ ' Centimetros <br><br>'
+            //res.innerHTML =  s +' Metros tem = ' +resp+ ' Centimetros <br><br>'
+
+            if (s <= 280){
+                por=(20/100)*s
+                resultado= s + por
+                res.innerHTML = 'Seu salario antes do reajuste: ' +s+ ' Reais <br>'+
+                 'Percentual aumentado: 20%<br>'+
+                 'O valor aumentado é: R$ ' +por+
+                '<br>Com o reajuste, o seu salário é: R$ '+ resultado
+            }
+
+
+
+
             img.setAttribute('src', 'icons8-cor-48.png')
             res.appendChild(img)
 
+            
+
+            //if (resp < 6){
+               // res.innerHTML = 'Sua Media foi ' +resp+ ' Infelizmente Você foi Reprovado! <br><br>'
+               // img.setAttribute('src', 'tri.png')
+            //}else{
+              //  res.innerHTML = 'Sua Media foi ' +resp+ ' Parabéns Você foi Aprovado! <br><br>'
+               // img.setAttribute('src', 'sorr.png')
+           // }
 
         }
     </script>
