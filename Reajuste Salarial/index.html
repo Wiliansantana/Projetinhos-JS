@@ -76,6 +76,32 @@
                 '<br>Com o reajuste, o seu salário é: R$ '+ resultado
             }
 
+            if (s > 280 || s <= 700){
+                por=(15/100)*s
+                resultado= s + por
+                res.innerHTML = 'Seu salario antes do reajuste: ' +s+ ' Reais <br>'+
+                 'Percentual aumentado: 15%<br>'+
+                 'O valor aumentado é: R$ ' +por+
+                '<br>Com o reajuste, o seu salário é: R$ '+ resultado
+            }
+
+            if  (s > 700 || s <= 1500){
+                por=(10/100)*s
+                resultado= s + por
+                res.innerHTML = 'Seu salario antes do reajuste: ' +s+ ' Reais <br>'+
+                 'Percentual aumentado: 10%<br>'+
+                 'O valor aumentado é: R$ ' +por+
+                '<br>Com o reajuste, o seu salário é: R$ '+ resultado
+            }   
+
+            if  (s > 1500){
+                por=(5/100)*s
+                resultado= s + por
+                res.innerHTML = 'Seu salario antes do reajuste: ' +s+ ' Reais <br>'+
+                 'Percentual aumentado: 5%<br>'+
+                 'O valor aumentado é: R$ ' +por+
+                '<br>Com o reajuste, o seu salário é: R$ '+ resultado
+            }
 
 
 
