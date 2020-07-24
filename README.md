@@ -2,6 +2,34 @@
  <h3> Projetinhos utilizando Html, Css, Bootstrap, (DOM e Manipulação de imagens com JavaScript)..</h3>
  <h5>Projetinhos feito com base nos exercicios em Python do site "https://wiki.python.org.br/ListaDeExercicios" recriado em Javascript.</h5><br>
  
+ <h3>Para testes dos programas confira os links abaixo:</h3>
+ 
+MEDIA BIMESTRAL<br>
+https://wiliansantana.github.io/Projetinhos-JS/M%C3%A9dia%20Bimestral/Notas.html<br>
+PESO IDEAL<br>
+https://wiliansantana.github.io/Projetinhos-JS/Peso%20Ideal/index.html<br>
+	QUAL PERIODO ESTUDA?<br>
+https://wiliansantana.github.io/Projetinhos-JS/Qual%20periodo%20vc%20estuda/index.html<br>
+	QUANTO GASTO PARA ENCHER O TANQUE?<br>
+https://wiliansantana.github.io/Projetinhos-JS/Quanto%20Gasto%20de%20Combustivel/Combustivel.html<br>
+	REAJUSTE SALARIAL<br>
+https://wiliansantana.github.io/Projetinhos-JS/Reajuste%20Salarial/index.html<br>
+	VALIDAÇÃO DE CAMPOS<br>
+https://wiliansantana.github.io/Projetinhos-JS/Valida%C3%A7%C3%A3o%20de%20campos/valida%C3%A7%C3%A3o.html<br>
+	ÁREA DO QUADRADO<br>
+https://wiliansantana.github.io/Projetinhos-JS/%C3%81rea%20do%20Quadrado/index.html<br>
+CADASTRO<br>
+https://wiliansantana.github.io/Projetinhos-JS/Cadastro/Usuario%20e%20Senha.html<br>
+	CELSIUS EM FARENHEIT<br>
+https://wiliansantana.github.io/Projetinhos-JS/Celsius%20em%20Farenheit/index.html<br>
+	HORAS TRABALHADAS<br>
+https://wiliansantana.github.io/Projetinhos-JS/Horas%20trabalhadas/HorasTrabalhadas.html<br>
+	INVESTIGAÇÂO<br>
+https://wiliansantana.github.io/Projetinhos-JS/Investiga%C3%A7%C3%A3o/index.html<br>
+	METROS EM CENTIMETROS<br>
+https://wiliansantana.github.io/Projetinhos-JS/Metros%20em%20Centimetros/Metros%20em%20centimetros.html<br><br>
+
+ 
  ![Apro](https://user-images.githubusercontent.com/48594322/80485213-5de55400-892f-11ea-82c7-d5f8db96b089.png)
  ![Rep](https://user-images.githubusercontent.com/48594322/80485228-62117180-892f-11ea-8f46-aedd3b0eec91.png)
  ![mec](https://user-images.githubusercontent.com/48594322/80595823-c0a42180-89fb-11ea-88cd-009bd917ffea.png)
